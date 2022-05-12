@@ -1,0 +1,18 @@
+<%= form_for( User.new , remote: true ) do |form| %>
+
+    <div>
+    <%= form.label :Name %>
+    <%= form.text_field :name %>
+    </div>
+    <br><br>
+  
+    <div>
+    <%= form.label :Content %>
+    <%= form.text_area :content %>
+    </div>
+    <br><br>
+    
+    <div>
+    <%= form.submit %>
+    </div>
+<% end %> 

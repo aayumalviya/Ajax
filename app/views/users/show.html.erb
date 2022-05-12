@@ -1,0 +1,16 @@
+<h1>Show</h1>
+<br>
+<table border="1px", padding="10px" , cellspacing="10px">
+<tr>
+<th>Name</th>
+<th>Content</th>
+</tr>
+<tr>
+<td><%= @user.name %></td>
+<td><%= @user.content %></td>
+</tr>
+</table>
+<br>
+<button><%= link_to "Edit" , edit_user_path(@user) %></button>
+<br><br>
+<button><%= link_to "Index", users_path %></button>
